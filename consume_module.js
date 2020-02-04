@@ -1,4 +1,2 @@
-function display_message() { 
-    console.log("Hello World") 
- } 
- export default display_message
+import display_message from './Message_module.js'
+    display_message()
