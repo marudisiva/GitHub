@@ -1,0 +1,11 @@
+class StaticVariable
+{
+static int a=10
+}
+public class Main
+{
+public static void main(String ar[])
+{
+System.out.println(a);
+}
+}
