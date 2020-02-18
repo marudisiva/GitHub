@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+  .bg-img{
+background-image:url("https://img.freepik.com/free-vector/pastel-sky-white-clouds-background_56745-87.jpg?size=626&ext=jpg");
+ height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+div.absolute {
+  position: absolute;
+  bottom: 10px;
+  width: 50%;
+  border: 3px solid #8AC007;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: darkgray;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.container {
+    padding-top:100px;
+    text-align: center;
+    color: black;
+  }
+  
+  /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  
+  /* Top right text */
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  
+  /* Bottom right text */
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  </style>
+</head>
+<body>
+<br>
+
+<div class="bg-img">
+<div class="text-center" style="margin-bottom:20 margin-top:30">
+  <h1>PLACE FITNESS</h1>
+  <p>Become a part of fit world</p> 
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="app.html">PlaceAppointment</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="view.html">ViewAppointment</a>
+      </li> 
+<li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact Us</a>
+      </li>      
+    </ul>
+  </div>  
+
+<div id="mySidenav" class="sidenav" align="left">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="app.html">Appointment</a>
+  <a href="view.html">View Appointment</a>
+  <a href="contact.html">Contact</a>
+</div>
+<span style="font-size:30px;cursor:pointer;" onclick="openNav()" align="left">&#9776; </span>
+</nav>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+ 
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+<div class="container">
+
+  <div class="centered">Physical fitness is a state of health and well-being and, more specifically, the ability to perform aspects of sports, occupations and daily activities. Physical fitness is generally achieved through proper nutrition, moderate-vigorous physical exercise, and sufficient rest.
+
+Before the industrial revolution, fitness was defined as the capacity to carry out the day’s activities without undue fatigue. However, with automation and changes in lifestyles physical fitness is now considered a measure of the body's ability to function efficiently and effectively in work and leisure activities, to be healthy, to resist hypokinetic diseases, and to meet emergency situations.</div>
+
+
+
+
+
+</div>
+
+
+
+<!--
+<h2>Why we need to be fit</h2>
+<ul>
+<li>Increase your life expectancy</li>
+<li>Reduce your risk of injury</li>
+<li>Improve your quality of life</li>
+<li>Improve your health</li>
+</ul>
+-->
+</div>
+ <a href="app.html" class="btn btn-info" role="button">Join Us</a>
+
+
+
+</body>
+</html>
+ 

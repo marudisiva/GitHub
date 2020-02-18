@@ -1,0 +1,1319 @@
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Fitness</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script>
+ function validate()
+  {
+  var firstname = document.getElementById("firstname");
+  var lastname = document.getElementById("lastname");
+  var phone = document.getElementById("phone").value;
+ var email = document.getElementById("Email");
+  var age = document.getElementById("age");
+  var streetaddress = document.getElementById("streetAddress");
+ if(firstname.match(/[A-Z]/))
+ {
+ cp.style.display = "none";
+ }
+ else{
+ cp.style.display = "block";
+ }
+ if(firstname.match(/[a-z]/))
+ {
+ sm.style.display = "none";
+ }
+ else{
+ sm.style.display = "block";
+ }
+ if(phone.match(/[0-9]/))
+ {
+ nm.style.display = "none";
+ }
+ else{
+ nm.style.display = "block";
+ }
+ if(firstname.value.trim() =="" ||phone.value.trim() =="")
+  {
+  alert("blank values are not accepted");
+  return false;
+ }
+ else
+  {
+  true;
+ }
+}
+</script>
+</head>
+<style>
+
+body {
+
+ background-image: url("https://133hazelton.com/wp-content/uploads/2017/04/Amenities-Fitness-bg-min.jpg");
+ background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+
+<body>
+<script>
+/* Hide the browser's default radio button */
+.container input {
+ position: absolute;
+ opacity: 0;
+ cursor: pointer;
+}
+.checkmark {
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 25px;
+ width: 25px;
+ background-color: #eee;
+ border-radius: 50%;
+}
+.container:hover input ~ .checkmark {
+ background-color: #ccc;
+}
+.container input:checked ~ .checkmark {
+ background-color: #2196F3;
+}
+.checkmark:after {
+ content: "";
+ position: absolute;
+ display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Show the indicator (dot/circle) when checked */
+
+
+
+
+
+
+
+.container input:checked ~ .checkmark:after {
+
+
+
+
+
+
+
+ display: block;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style the indicator (dot/circle) */
+
+
+
+
+
+
+
+.container .checkmark:after {
+
+
+
+
+
+
+
+ top: 9px;
+
+
+
+
+
+
+
+ left: 9px;
+
+
+
+
+
+
+
+ width: 8px;
+
+
+
+
+
+
+
+ height: 8px;
+
+
+
+
+
+
+
+ border-radius: 50%;
+
+
+
+
+
+
+
+ background: white;
+
+
+
+
+
+
+
+}
+
+
+
+</script>
+
+
+
+<body>
+
+
+
+<h2>PLACE FITNESS TRAINER APPOINTMENT</h2>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="app.html">PlaceAppointment</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="view.html">ViewAppointment</a>
+      </li> 
+<li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact Us</a>
+      </li>      
+    </ul>
+  </div>  
+</nav>
+
+
+<div class="container">
+
+
+
+ <form action="/action_page.php">
+
+<div class="form-row">
+
+
+
+
+
+
+
+ <div class="form-group col-md-6">
+
+
+
+
+
+ <label for="usr">First Name:</label>
+
+  <input type="text" class="form-control" id="firstname" placeholder="firstname" name="firstname" pattern="[A-Za-z]" required>
+
+
+
+
+
+
+
+ </div>
+
+<div class="form-group col-md-6">
+
+<label for="pwd">Last Name:</label>
+
+  <input type="text" class="form-control" id="lastname" placeholder=" lastname" name="lastname" pattern="[A-Za-z]" required>
+
+
+
+
+ </div>
+
+</div>
+
+
+
+ <div class="form-row">
+
+<div class="form-group col-md-4">
+
+
+
+  <label for="phone">Phone no</label>
+
+
+
+  <input type="number" class="form-control" pattern="[0-9]{10}" required id="phone" placeholder="">
+
+ </div>
+
+
+
+
+
+ <div class="form-group col-md-4">
+
+
+
+  <label for="Email">Email</label>
+
+
+
+  <input type="email" class="form-control" id="Email" placeholder="Email" name="email" >
+
+
+
+ </div>
+
+
+
+ <div class="form-group col-md-4">
+
+
+
+  <label for="age">Age</label>
+
+
+
+  <input type="number" class="form-control" id="age" min=18 max=60 placeholder="">
+
+
+
+ </div>
+
+
+
+ </div>
+
+
+
+ <div class="form-group">
+
+
+
+ <label for="inputAddress">Address</label>
+
+
+
+ <input type="text" class="form-control" id="streetAddress" placeholder="">
+
+
+
+ <label for="streetAddress">StreetAddress </label>
+
+
+
+ </div>
+
+
+
+ <div class="form-row">
+
+
+
+ <div class="form-group col-md-4">
+
+
+
+  <input type="text" class="form-control" id="City">
+
+ <label for="City">City</label>
+
+
+
+ </div>
+
+ <div class="form-group col-md-4">
+
+
+
+  <input type="text" class="form-control" id="state">
+
+ <label for="state">state</label>
+
+
+
+ </div>
+
+ <div class="form-group col-md-4">
+
+
+
+  <input type="text" class="form-control" id="country">
+
+<label for="country">Country</label>
+
+
+
+ </div>
+
+
+
+ </form>
+
+
+
+</div>
+
+
+
+<h4>Trainer Preference:</h4>
+
+
+
+<label class="container">
+
+
+
+ <input type="radio" checked="checked" name="radio">Male Trainer
+
+
+
+ <span class="checkmark"></span>
+
+
+
+</label>
+
+
+
+<label class="container">
+
+ <input type="radio" name="radio">Female Trainer
+
+
+
+
+
+ <span class="checkmark"></span>
+
+
+
+</label>
+
+
+
+<label class="container">
+
+
+
+ <input type="radio" name="radio">No preference
+
+
+
+ <span class="checkmark"></span>
+
+
+
+</label>
+
+
+
+<label class="container">Trainers Name
+
+
+
+
+
+
+
+<input type="text" id="text" />
+
+
+
+ <span class="checkmark"></span>
+
+
+
+</label>
+
+
+
+<label class="container">Others
+
+
+
+
+
+
+
+<input type="text" id="text" />
+
+
+
+ <span class="checkmark"></span>
+
+
+
+</label>
+
+
+
+<h4>Do you need physiotherapist?</h4>
+
+
+
+<label class="container">Yes
+
+
+
+ <input type="radio" name="radio">
+
+
+
+ <span class="checkmark"></span>
+
+
+
+</label>
+
+
+
+<label class="container">No
+
+
+
+ <input type="radio" name="radio">
+
+
+
+ <span class="checkmark"></span>
+
+
+
+</label>
+
+
+
+<h4>Appointment</h4>
+
+
+
+
+
+
+
+<body>
+
+
+
+
+<div class="container">
+
+ <table class="table table-hover" >
+
+
+
+
+
+
+
+ <thead>
+
+
+
+
+
+
+
+ <tr >
+
+
+
+
+
+
+
+ <th scope="col">DAY</th>
+
+
+
+
+
+
+
+ <th scope="col">7am-9am</th>
+
+
+
+
+
+
+
+
+
+ <th scope="col">9am-11am</th>
+
+
+
+
+
+
+
+ <th scope="col">11am-1pm</th>
+
+
+
+
+
+
+
+ <th scope="col">1pm-3pm</th>
+
+
+
+
+
+
+
+ <th scope="col">3pm-5pm</th>
+
+
+
+
+
+
+
+ </tr>
+
+
+
+
+
+
+
+ </thead>
+
+
+
+
+
+
+
+ <tbody>
+
+
+
+
+
+
+
+ <tr>
+
+
+
+
+
+
+
+ <th scope="row">Monday</th>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Monday"></td>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Monday"></td>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Monday"></td>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Monday"></td>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Monday"></td>
+
+
+
+
+
+
+
+ </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <tr>
+
+
+
+
+
+
+
+ <th scope="row">Tuesday</th>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Tuesday"></td>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Tuesday"></td>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Tuesday"></td>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Tuesday"></td>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Tuesday"></td>
+
+
+
+
+
+
+
+ </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <tr>
+
+
+
+
+
+
+
+ <th scope="row">Wednesday</th>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Wednesday"></td>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Wednesday"></td>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Wednesday"></td>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Wednesday"></td>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Wednesday"></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <tr>
+
+
+
+
+
+
+
+ <th scope="row">Thursday</th>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Thursday"></td>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Thursday"></td>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Thursday"></td>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Thursday"></td>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Thursday"></td>
+
+
+
+
+
+
+
+ </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <tr>
+
+
+
+
+
+
+
+ <th scope="row">Friday</th>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Friday"></td>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Friday"></td>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Friday"></td>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Friday"></td>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Friday"></td>
+
+
+
+
+
+
+
+ </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <tr>
+
+
+
+
+
+
+
+ <th scope="row">Saturday</th>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Saturday"></td>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Saturday"></td>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Saturday"></td>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Saturday"></td>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Saturday"></td>
+
+
+
+
+
+
+
+ </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <tr>
+
+
+
+
+
+
+
+ <th scope="row">Sunday</th>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Sunday"></td>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Sunday"></td>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Sunday"></td>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Sunday"></td>
+
+
+
+
+
+
+
+ <td><input type="radio" name="Sunday"></td>
+
+
+
+
+
+
+
+ </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </tbody>
+
+
+
+
+
+
+
+</table>
+
+
+
+
+   <label>Select Package :</label>
+
+   <div class="radio">
+
+   <label><input type="radio" id="pack1" name="optradio" onclick="cal()">One time Assesment only (INR 500)</label>
+
+   </div>
+
+   <div class="radio">
+
+   <label><input type="radio" id="pack2" name="optradio" onclick="calc()">4 Weekly Sessions (INR 400/session)</label>
+
+
+
+   </div>
+
+   <div class="radio">
+
+   <label><input type="radio" id="pack3"name="optradio" onclick="calcu()">12 Weekly Sessions (INR 300/session)</label>
+
+   </div>
+
+   <div class="radio">
+
+   <div class="row">
+
+    <div class="col-lg-8">
+
+    <label class="radio-inline"><input type="radio" id="pack4" name="optradio" onclick="myFun()">Others : </label><div id="oth"><input type="text" id="other" class="form-control" placeholder="Enter Trainer Name"><label>Quote will be shared on phone call</label></div>
+
+   </div>
+
+   </div>
+
+   <script>
+
+  function cal() {
+
+     document.getElementById('inr').value = 500.00;
+
+     document.getElementById('paisa').value=0.0;
+
+    }
+
+    function calc() {
+
+     document.getElementById('inr').value = 1600.00;
+
+     document.getElementById('paisa').value=0.0;
+
+    }
+
+    function calcu() {
+
+     document.getElementById('inr').value = 3600.00;
+
+     document.getElementById('paisa').value=0.0;
+
+    }
+
+    function myFun() {
+
+     var x = document.getElementById("oth");
+
+     if (x.style.display === "none") {
+
+      x.style.display = "block";
+
+     }
+
+ else {
+
+     x.style.display = "none";
+
+     }
+
+    }
+
+    </script>
+
+   <label>Quote</label>
+
+   <div class="row">
+
+   <div class="col-lg-3">
+
+   <div class="form-group">
+
+   <input type="text"class="form-control" id="inr" required>
+
+   <label>INR</label>
+
+   </div>
+
+   </div>
+
+   <div class="col-lg-3">
+
+   <div class="form-group">
+
+    <input type="text" class="form-control" id="paisa" required>
+
+    <label>Paisa</label></div>
+
+   </div>
+
+
+
+  </div>
+
+<input type="submit" value="Submit form" onclick="fitnessTracker()" class="bg-primary">
+
+
+
+       </form>
+
+
+
+    </div>
+
+
+
+  </from>
+
+
+
+</body>
+
+
+
+</html>
+
